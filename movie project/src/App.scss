@@ -1,0 +1,30 @@
+.app-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+}
+.card-container{
+  width: 250px;
+  margin: 15px;
+  background-color: rgb(55, 52, 52);
+  border-radius: 10px;
+  box-sizing: border-box;
+  gap: 20px;
+  .card-image{
+      max-width: 100%;
+  }
+  .card-title{
+      text-align: center;
+      color: white;
+      font: bolder;
+  }
+  .card-vote{
+      display: flex;
+      justify-content: flex-end;
+      color: rgb(148, 148, 148);
+      font-size: 13px;
+  }
+
+}
