@@ -1,11 +1,11 @@
 import {  useNavigate } from "react-router-dom";
 
-const MovieCard = ({ title, poster, vote}) => {
+const MovieCard = ({id, title, poster, vote}) => {
     const baseUrl = "https://image.tmdb.org/t/p/w500"
     const nav = useNavigate();
 
     const handleClick=() => {
-        nav('/details')
+        nav(`/details/${id}`)
     }
     return (
         <div className="card-container" onClick={handleClick}>
@@ -17,3 +17,4 @@ const MovieCard = ({ title, poster, vote}) => {
 };
 
 export default MovieCard;
+
